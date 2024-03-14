@@ -1,8 +1,9 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind utilities; */
+/* @import url('./assets/css/bootstrap.min.css');
+@import url('./assets/css/templatemo.css');
+@import url('./assets/css/custom.css'); */
 
 .font-pacifico{
   font-family: "Pacifico", cursive;

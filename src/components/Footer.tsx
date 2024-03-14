@@ -1,100 +1,194 @@
+import React from "react";
+
 const Footer = () => {
   return (
-    <footer className="border-t-4 border-white bg-[#242526] text-white py-10 mt-28">
-      <div className="container flex justify-between">
-        <div className="left">
-          <p className="logo">
-            <a className="flex items-center gap-3" href="/">
-              <img
-                className="rounded-md"
-                height={50}
-                width={50}
-                src="logo.png"
-                alt=""
-              />
-              <div className="bg-gradient-to-r from-[#00d4ff] to-[#79095c] bg-clip-text ">
-                <p className="text-2xl leading-[50px] font-bold text-transparent font-mono font-pacifico">
-                  Mung Nguyen
+    <div>
+      <footer className="bg-dark" id="tempaltemo_footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4 pt-5">
+              <h2 className="h2 text-success border-bottom pb-3 border-light logo">
+                Zay Shop
+              </h2>
+              <ul className="list-unstyled text-light footer-link-list">
+                <li>
+                  <i className="fas fa-map-marker-alt fa-fw" />
+                  123 Consectetur at ligula 10660
+                </li>
+                <li>
+                  <i className="fa fa-phone fa-fw" />
+                  <a className="text-decoration-none" href="tel:010-020-0340">
+                    010-020-0340
+                  </a>
+                </li>
+                <li>
+                  <i className="fa fa-envelope fa-fw" />
+                  <a
+                    className="text-decoration-none"
+                    href="mailto:info@company.com"
+                  >
+                    info@company.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-4 pt-5">
+              <h2 className="h2 text-light border-bottom pb-3 border-light">
+                Products
+              </h2>
+              <ul className="list-unstyled text-light footer-link-list">
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Luxury
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Sport Wear
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Men's Shoes
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Women's Shoes
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Popular Dress
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Gym Accessories
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Sport Shoes
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-4 pt-5">
+              <h2 className="h2 text-light border-bottom pb-3 border-light">
+                Further Info
+              </h2>
+              <ul className="list-unstyled text-light footer-link-list">
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Shop Locations
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    FAQs
+                  </a>
+                </li>
+                <li>
+                  <a className="text-decoration-none" href="#">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="row text-light mb-4">
+            <div className="col-12 mb-3">
+              <div className="w-100 my-3 border-top border-light" />
+            </div>
+            <div className="col-auto me-auto">
+              <ul className="list-inline text-left footer-icons">
+                <li className="list-inline-item border border-light rounded-circle text-center">
+                  <a
+                    className="text-light text-decoration-none"
+                    target="_blank"
+                    href="http://facebook.com/"
+                  >
+                    <i className="fab fa-facebook-f fa-lg fa-fw" />
+                  </a>
+                </li>
+                <li className="list-inline-item border border-light rounded-circle text-center">
+                  <a
+                    className="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.instagram.com/"
+                  >
+                    <i className="fab fa-instagram fa-lg fa-fw" />
+                  </a>
+                </li>
+                <li className="list-inline-item border border-light rounded-circle text-center">
+                  <a
+                    className="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://twitter.com/"
+                  >
+                    <i className="fab fa-twitter fa-lg fa-fw" />
+                  </a>
+                </li>
+                <li className="list-inline-item border border-light rounded-circle text-center">
+                  <a
+                    className="text-light text-decoration-none"
+                    target="_blank"
+                    href="https://www.linkedin.com/"
+                  >
+                    <i className="fab fa-linkedin fa-lg fa-fw" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-auto">
+              <label className="sr-only" htmlFor="subscribeEmail">
+                Email address
+              </label>
+              <div className="input-group mb-2">
+                <input
+                  type="text"
+                  className="form-control bg-dark border-light"
+                  id="subscribeEmail"
+                  placeholder="Email address"
+                />
+                <div className="input-group-text btn-success text-light">
+                  Subscribe
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-100 bg-black py-3">
+          <div className="container">
+            <div className="row pt-2">
+              <div className="col-12">
+                <p className="text-left text-light">
+                  Copyright © 2021 Company Name | Designed by{" "}
+                  <a
+                    rel="sponsored"
+                    href="https://templatemo.com"
+                    target="_blank"
+                  >
+                    TemplateMo
+                  </a>
                 </p>
               </div>
-            </a>
-          </p>
-          <p className="text-sm text-gray-200 mt-3">
-            Email: truyenqq@proton.me
-          </p>
-          <p className="link">
-            <a href="/tin-tuc/chinh-sach-bao-mat.html">Chính Sách Bảo Mật</a>
-          </p>
+            </div>
+          </div>
         </div>
-        <div className="w-3/5 text-sm">
-          <ul className="flex gap-2 flex-wrap">
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/">Truyện Tranh</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/">Truyện Tranh Online</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/">Truyện Tranh Mới</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/">Truyện Tranh Hay</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/">Đọc Truyện Tranh</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/the-loai/manhwa-49.html">Manhwa</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/the-loai/manhua-35.html">Manhua</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/truyen-moi-cap-nhat/trang-1.html?country=4">Manga</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/the-loai/ngon-tinh-87.html">Truyện Ngôn Tình</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/nettruyen">nettruyen</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/toptruyen">toptruyen</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/blogtruyen">blogtruyen</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/ocumeo">ocumeo</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/vcomycs">vcomycs</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/protruyen">protruyen</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/tusachxinh">tusachxinh</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/tutientruyen">tutientruyen</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/truyentranhlh">truyentranhlh</a>
-            </li>
-            <li className="px-2 py-1 bg-[#18191a] w-max rounded">
-              <a href="/tag/teamlanhlung">teamlanhlung</a>
-            </li>
-          </ul>
-          <p className="text-sm mt-4">
-            Mọi thông tin và hình ảnh trên website đều được sưu tầm trên
-            Internet. Chúng tôi không sở hữu hay chịu trách nhiệm bất kỳ thông
-            tin nào trên web này. Nếu làm ảnh hưởng đến cá nhân hay tổ chức nào,
-            khi được yêu cầu, chúng tôi sẽ xem xét và gỡ bỏ ngay lập tức.
-          </p>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 
